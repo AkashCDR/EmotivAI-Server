@@ -7,6 +7,9 @@ import { inngest } from "../inngest/client";
 import { User } from "../models/User";
 import { InngestSessionResponse, InngestEvent } from "../types/inngest";
 import { Types } from "mongoose";
+import dotenv from "dotenv"
+
+dotenv.config();
 
 // Initialize Gemini API
 const genAI = new GoogleGenerativeAI(
